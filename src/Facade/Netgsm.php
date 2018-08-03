@@ -1,4 +1,4 @@
-<?php namespace Brkphp\Netgsm\Facade;
+<?php namespace salihkiraz\Netgsm\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
