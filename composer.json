@@ -14,7 +14,7 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "Brkphp\\Netgsm\\": "src/"
+      "salihkiraz\\Netgsm\\": "src/"
     }
   }
 }
