@@ -1,4 +1,4 @@
-<?php namespace Brkphp\Netgsm;
+<?php namespace salihkiraz\Netgsm;
 
 class Sms extends Netgsm
 {
