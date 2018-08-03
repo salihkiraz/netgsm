@@ -11,7 +11,7 @@ Netgsm Laravel Santral ve Sms Paketi
 Kullanımı
 ====================
 
-> Laravel 5.*
+> Laravel ^5.4*
 
  **Kurmak için :** 
 ```
