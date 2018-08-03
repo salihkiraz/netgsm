@@ -30,11 +30,11 @@ class NetgsmServiceProvider extends ServiceProvider
         // Config
         $this->mergeConfigFrom( __DIR__.'/Config/netgsm.php', 'netgsm');
 
-        $this->app['Netgsm'] = $this->app->share(function($app) {
+       $this->app->singleton("Netgsm",function($app) {
             return new Netgsm;
         });
         $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-        $loader->alias('Santral','Brkphp\Netgsm\Santral');
-        $loader->alias('Sms','Brkphp\Netgsm\Sms');
+        $loader->alias('Santral','salihkiraz\Netgsm\Santral');
+        $loader->alias('Sms','salihkiraz\Netgsm\Sms');
     }
 }
