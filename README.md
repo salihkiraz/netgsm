@@ -1,7 +1,7 @@
 
 # Netgsm Laravel Santral ve Sms Paketi
 
-brkphp/netgsm paketinin laravel 5.4 ve üzeri için uyumulu hale getirilmiş forkudur.
+<a href="https://github.com/brkphp/netgsm">brkphp/netgsm</a> paketinin laravel 5.4 ve üzeri için uyumulu hale getirilmiş forkudur.
 
 Hakkında
 ====================
