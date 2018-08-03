@@ -1,6 +1,6 @@
 <?php
 
-namespace Brkphp\Netgsm;
+namespace salihkiraz\Netgsm;
 
 use Illuminate\Support\ServiceProvider;
 
