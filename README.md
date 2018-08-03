@@ -1,6 +1,8 @@
 
 # Netgsm Laravel Santral ve Sms Paketi
 
+brkphp/netgsm paketinin laravel 5.4 ve üzeri için uyumulu hale getirilmiş forkudur.
+
 Hakkında
 ====================
 
@@ -13,15 +15,15 @@ Kullanımı
 
  **Kurmak için :** 
 ```
-composer require brkphp/netgsm
+composer require salihkiraz/netgsm
 ```
 - App.php Dosyasına Provider olarak ekleyiniz : 
 ``` 
-Brkphp\Netgsm\NetgsmServiceProvider::class,
+salihkiraz\Netgsm\NetgsmServiceProvider::class,
 ```
 - App.php Dosyasına Aliases olarak ekleyiniz : 
 ``` 
-'Netgsm' => Brkphp\Netgsm\Facade\Netgsm::class,
+'Netgsm' => salihkiraz\Netgsm\Facade\Netgsm::class,
 ```
  
  Ayarları Yayınlamak için : 
@@ -40,7 +42,7 @@ Sms Örnekleri
 **Sms Göndermek için** 
 
 ```
-    $new = new \Brkphp\Netgsm\Sms();
+    $new = new \salihkiraz\Netgsm\Sms();
     $new->message('deneme mesaj');
     $new->phone('0123456789');
     return $new->send();
@@ -52,7 +54,7 @@ Santral Örnekleri
 **Bugünün Kayıtlarını çekmek için** 
 
 ```
-$new = new \Brkphp\Netgsm\Santral();
+$new = new \salihkiraz\Netgsm\Santral();
 return $new->dateQuery();
 ```
 
@@ -63,7 +65,7 @@ return $new->dateQuery();
 **Tarih Bazlı Kayıtları çekmek için** 
 
 ```
-$new = new \Brkphp\Netgsm\Santral();
+$new = new \salihkiraz\Netgsm\Santral();
 $new->startDate(250820170000);
 $new->stopDate(270820172359);
 return $new->dateQuery();
@@ -76,7 +78,7 @@ return $new->dateQuery();
 **Telefon Numarası ile Kayıtları çekmek için** 
 
 ```
-$new = new \Brkphp\Netgsm\Santral();
+$new = new \salihkiraz\Netgsm\Santral();
 $new->phone(123456789);
 $new->phone(987654321);
 return $new->sendQuery();
@@ -86,7 +88,7 @@ return $new->sendQuery();
 **Uniqid ile Kayıtları çekmek için** 
 
 ```
-$new = new \Brkphp\Netgsm\Santral();
+$new = new \salihkiraz\Netgsm\Santral();
 $new->uniqId(123456789);
 $new->uniqId(987654321);
 return $new->sendQuery();
