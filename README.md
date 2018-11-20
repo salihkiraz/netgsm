@@ -102,5 +102,12 @@ $new->addHeadParameter('key','value')
 $new->addBodyParameter('key','value')
 ```
 
+Rapor almak için
+
+```
+ $new = new \salihkiraz\Netgsm\Sms();
+ $new->rapor("236859926");
+```
+
 > Parametreler ile ilgili detaylı bilgi Netgsm Api Dökümanında bulunmaktadır. 
 > [Net Gsm Api](https://www.netgsm.com.tr/Dokuman/sanal-santral.asp "Net Gsm Api")
