@@ -16,5 +16,12 @@
     "psr-4": {
       "salihkiraz\\Netgsm\\": "src/"
     }
-  }
+  },
+  "extra":{
+                "laravel":{
+                    "providers":[
+                        "salihkiraz\\Netgsm\\"
+                    ]
+                }
+            }
 }
